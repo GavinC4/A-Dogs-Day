@@ -1,7 +1,4 @@
-// This is the JS file for the Firebase data
-
- // ========Initialize Firebase=========
-  // Initialize Firebase
+// ========Initialize Firebase=========
   var config = {
     apiKey: "AIzaSyD49RrODDV-8s26jY6GXLhVyOi1mcdeyHI",
     authDomain: "dogs-day.firebaseapp.com",

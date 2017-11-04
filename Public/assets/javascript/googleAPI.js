@@ -32,7 +32,7 @@ function getData() {
     console.log(cardId);
 }
 
-// ======== 1st GOOGLE API AJAX FUNCTION===========
+// ======== GOOGLE API AJAX FUNCTION===========
 // googlePlacesPull();
 // var petStores = [];
 
