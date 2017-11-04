@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#0d47a1">
+    <title>Day With Your Dog</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- FONT AWESOME LINK -->
+    <link href="assets/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+    <!-- CSS  -->
+    <link href="assets/css/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/custom-min.css" type="text/css" rel="stylesheet">
+    <!-- STYLE SHEET -->
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+    <!-- jQuery -->
+    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+</head>
+
+<!-- ================= START OF HTML ================= -->
+<body id="top" class="scrollspy">
+
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
+
+<!-- ================= NAVIGATION ================= -->
+
+<div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+                <img class="brand-log logo-navbar" src="assets/img/frenchie.png">
+                <a href="#" id="logo-container" class="brand-logo">Day With Your Dog</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#yourMap">Map</a></li>
+                    <li><a href="#cards">Your Day</a></li>
+                    <li><a href="#inspiration">Inspiration</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#yourMap">Map</a></li>
+                    <li><a href="#cards">Your Day</a></li>
+                    <li><a href="#inspiration">Inspiration</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- ================= SPLASH PAGE ANIMATION ================= -->
+<!-- ADD A SEARCH BAR FEATURE HERE UNDER THE ANIMATION -->
+<!-- COULD ALSO ADD A SLIDER to DISPLAY DIFFERENT DOG IMAGES -->
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <h1 class="text_h center header cd-headline letters type">
+            
+            <span class="cd-words-wrapper waiting">
+                <b class="is-visible">Day</b>
+                <b>Eat</b>
+                <b>Drink</b>
+                <b>Play</b>
+                <!-- <b>Shop</b>
+                <b>Socialize</b> -->
+            </span>
+            <span>with your Dog</span>
+        </h1>
+
+        <div class="row">
+      
+        <!-- Possible Dropdown Menu -->
+            <div class="col s12 m12">
+
+                <!-- Dropdown Trigger -->
+                <a class='dropdown-button btn btn-large blue lighten-3 center-align' href='#'
+                   data-activates='dropdown1'>Choose Your Adventure <span> <i
+                        class="fa fa-angle-double-down"></i></span></a>
+
+                <!-- Dropdown Structure -->
+                <ul id='dropdown1' class='dropdown-content categories'>
+                    <li><a href="#!" class="blue-text text-lighten-3" data-category="restaurants">EAT.</a></li>
+                    <li><a href="#!" class="blue-text text-lighten-3" data-category="bars">DRINK.</a></li>
+                    <li><a href="#!" class="blue-text text-lighten-3" data-category="parks">PLAY.</a></li>
+                    <!-- <li><a href="#!" class="blue-text text-lighten-3">SHOP.</a></li>
+                    <li><a href="#!" class="blue-text text-lighten-3">SOCIALIZE.</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- ================= PARALLAX ONE ================= -->
+<!-- This is the image that scrolls behind the text. -->
+<div class="parallax-container">
+    <div class="parallax"><img src="assets/img/bordercollie.jpg"></div>
+</div>
+ 
+<!-- ================= MAP SECTION ================= -->
+<!--This will be the MAP SECTION-->
+<div id="yourMap" class="section scrollspy">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2 class="center header text_h2"> FIND YOUR <span class="span_h2"> SPOT </span></h2>
+            </div>
+            <div class="col s12 white darken-2" id="map">GOOGLE MAPS
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= CARD DISPLAY - whatever is searched ================= -->
+<!-- Will need to update this piece dynamically based on AJAX call to firebase database  -->
+<div class="section scrollspy" id="cards">
+    <div class="container">
+        <h2 class="header text_b">Eat. Drink. Play.</h2>
+        <!-- Need to dynamically update these pics, should have a placeholder here, like featured bars or parks,etc.  -->
+        <div class="row" id="cardsAppearHere"></div>
+    </div>
+</div>
+
+<!-- ================= PARALLAX TWO ================= -->
+<!-- This is the image that scrolls behind the text. -->
+<!-- <div class="parallax-container">
+    <div class="parallax"><img src="assets/img/doghose.jpg"></div>
+</div> -->
+
+<!-- ================= PARALLAX THREE ================= -->
+<!-- This is the image that scrolls behind the text. -->
+<div class="parallax-container">
+    <div class="parallax"><img src="assets/img/lake.jpg"></div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<!-- TO DO : GET The SUBMIT BUTTON TO WORK -->
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="container">
+        <div class="row">
+
+<div class="col l12 s12">
+            <h1 class="header white-text">Contact Us</h1>
+            <form action="contact.php" method="GET">
+
+                <input type="text" name="name" placeholder="Your Name"> </input><br/>
+                <input type="email" name="email" placeholder="Your Email"> </input><br/>
+                <input type="text" name="message" placeholder="Your Message"> </input><br/>
+                <button type="submit" class="btn waves-effect waves-light red darken-1" name="submit" value="Submit"> Submit<i class="mdi-content-send right white-text"></i></button>
+
+            </form>
+
+        </div>
+    </div>
+    </div>
+    <div class="footer-copyright default_color">
+        <div class="container">
+            <a class="white-text" href="#"></a>
+        </div>
+    </div>
+</footer>
+
+<!-- ================= SCRIPTS================= -->
+<!-- Template JS files -->
+<script src="assets/javascript/plugin-min.js"></script>
+<script src="assets/javascript/custom-min.js"></script>
+<!-- Underscore JS library CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<!-- Custom JS File -->
+<script src="assets/javascript/api.js"></script>
+
+<!-- GOOGLE API MAPS SCRIPT LINK -->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM9Sy-q5y4LdWziDiHZ03uspNuxXd7lUo&callback=initMap">
+</script>
+
+    <!-- Templating Using Underscore Library -->
+     <script type="text/template" id="cardsResults">
+        <div class="col s12 m4 l4">
+            <div class="card" id="<%= card.cardId %>">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator cardImage" src="<%= cardImgURL %>" alt="search-image">
+                     <span class="card-title"><%= card.cardName %> </span>
+                </div>
+               
+                <div class="card-content text_b">
+                    <p class="card-info">Distance: <%= card.cardDistance %> mi.</p>
+                    <p class="card-info"><%= card.cardAddress %> </p>
+                    <p class="card-info"><%= card.cardPhone %> </p>
+                </div>
+                <div class="card-action">
+                    <a href="<%=card.cardYelpURL%>">Yelp Info</a>
+                    <!-- <a href="#">More info</a> could add a link to do a modal with more info -->
+                </div>
+            </div>
+        </div>
+    </script>
+
+    </body>
+</html>

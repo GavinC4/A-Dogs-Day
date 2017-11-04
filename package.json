@@ -1,0 +1,26 @@
+{
+  "name": "A-Dogs-Day",
+  "version": "1.0.0",
+  "description": "App to help you find something to do with your dog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "express": "^4.16.2",
+    "firebase": "^3.4.0",
+    "mysql": "^2.15.0",
+    "sequelize": "^4.22.4",
+    "yelp": "^1.0.1"
+  }
+}
