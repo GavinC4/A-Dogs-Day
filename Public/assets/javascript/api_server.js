@@ -2,7 +2,7 @@
 // Request API access: http://www.yelp.com/developers/getting_started/api_access
 
 var Yelp = require('yelp');
-var config = require('./config/config.json');
+var config = require('config/config.json');
 var firebase = require('firebase');
 
 // Initialize Firebase
@@ -26,7 +26,26 @@ var yelp = new Yelp({
   token_secret: config.tokenSecret
 });
 
-var OrlandoZipcodes = [];
+var OrlandoZipcodes = ["32801", "32802", "32803", "32808", "32809", "32812", "32814", "32815", "32817", "32818", "32804", 
+					   "32806", "32807", "32810", "32811", "32816", "32819", "32820", "32821", "32822", "32824", "32805",
+					   "32825", "32829", "32830", "32831", "32835", "32836", "32837", "32855", "32856", "32857", "32858",
+					   "32859", "32826", "32827", "32828", "32832", "32833", "32834", "32839", "32853", "32854", "32860",
+					   "32861", "32862", "32867", "32868", "32885", "32886", "32897", "32869", "32899", "32872", "32877",
+					   "32878", "32887", "32891", "32896"
+					   ];
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 for (var k = 0; k < OrlandoZipcodes.length; k++){
 	var zipcode = OrlandoZipcodes[k];

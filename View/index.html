@@ -7,14 +7,14 @@
     <title>Day With Your Dog</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!-- FONT AWESOME LINK -->
-    <link href="assets/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="../public/assets/css/font-awesome.min.css" type="text/css" rel="stylesheet">
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
     <!-- CSS  -->
-    <link href="assets/css/plugin-min.css" type="text/css" rel="stylesheet">
-    <link href="assets/css/custom-min.css" type="text/css" rel="stylesheet">
+    <link href="../public/assets/css/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="../public/assets/css/custom-min.css" type="text/css" rel="stylesheet">
     <!-- STYLE SHEET -->
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+    <link href="../public/assets/css/style.css" type="text/css" rel="stylesheet">
     <!-- jQuery -->
     <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
@@ -102,7 +102,7 @@
 <!-- ================= PARALLAX ONE ================= -->
 <!-- This is the image that scrolls behind the text. -->
 <div class="parallax-container">
-    <div class="parallax"><img src="assets/img/bordercollie.jpg"></div>
+    <div class="parallax"><img src="../public/assets/img/bordercollie.jpg"></div>
 </div>
  
 <!-- ================= MAP SECTION ================= -->
@@ -131,51 +131,138 @@
 
 <!-- ================= PARALLAX TWO ================= -->
 <!-- This is the image that scrolls behind the text. -->
-<!-- <div class="parallax-container">
-    <div class="parallax"><img src="assets/img/doghose.jpg"></div>
-</div> -->
-
-<!-- ================= PARALLAX THREE ================= -->
-<!-- This is the image that scrolls behind the text. -->
 <div class="parallax-container">
-    <div class="parallax"><img src="assets/img/lake.jpg"></div>
+    <div class="parallax"><img src="../public/assets/img/doghose.jpg"></div>
 </div>
 
 <!-- ================= FOOTER ================= -->
-<!-- TO DO : GET The SUBMIT BUTTON TO WORK -->
-<footer id="contact" class="page-footer default_color scrollspy">
+<!-- NEED TO CHANGE ALL OF LINKS -->
+<footer id="team" class="page-footer default_color scrollspy">
     <div class="container">
+        <h1 class="header white-text">The Team</h1>
         <div class="row">
+            <!-- AVATAR ONE - Wenfang -->
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="../public/assets/img/wenfang-avatar.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Wenfang<br/>
+                            <small><em><a class="red-text text-darken-1" href="#">Co-Founder</a></em></small></span>
+                        <p>
+                            
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
 
-<div class="col l12 s12">
-            <h1 class="header white-text">Contact Us</h1>
-            <form action="contact.php" method="GET">
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-github-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-envelope-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-pencil-square"></i>
+                            </a>
 
-                <input type="text" name="name" placeholder="Your Name"> </input><br/>
-                <input type="email" name="email" placeholder="Your Email"> </input><br/>
-                <input type="text" name="message" placeholder="Your Message"> </input><br/>
-                <button type="submit" class="btn waves-effect waves-light red darken-1" name="submit" value="Submit"> Submit<i class="mdi-content-send right white-text"></i></button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- AVATAR TWO - Milena -->
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="../public/assets/img/Milena-avatar.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Milena<br/>
+                            <small><em><a class="red-text text-darken-1" href="#"> Co-Founder</a></em></small>
+                        </span>
+                        <p>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
 
-            </form>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-github-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-envelope-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-pencil-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- AVATAR THREE - Geoff -->
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="../public/assets/img/geoff-avatar.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">
+                            Geoff<br/>
+                            <small><em><a class="red-text text-darken-1" href="#">Co-Founder</a></em></small></span>
+                        <p>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
 
-        </div>
-    </div>
-    </div>
-    <div class="footer-copyright default_color">
-        <div class="container">
-            <a class="white-text" href="#"></a>
-        </div>
-    </div>
-</footer>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-github-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-envelope-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-pencil-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- AVATAR FOUR - Gavin -->
+            <div class="col s12 m3">
+                <div class="card card-avatar">
+                    <div class="waves-effect waves-block waves-light">
+                        <img class="activator" src="../public/assets/img/gavin-avatar.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">
+                            Gavin<br/>
+                            <small><em><a class="red-text text-darken-1" href="#">Co-Founder</a></em></small></span>
+                        <p>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-github-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-envelope-square"></i>
+                            </a>
+                            <a class="blue-text text-lighten-2" href="#">
+                                <i class="fa fa-pencil-square"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
 <!-- ================= SCRIPTS================= -->
 <!-- Template JS files -->
-<script src="assets/javascript/plugin-min.js"></script>
-<script src="assets/javascript/custom-min.js"></script>
+<script src="../public/assets/javascript/plugin-min.js"></script>
+<script src="../public/assets/javascript/custom-min.js"></script>
 <!-- Underscore JS library CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 <!-- Custom JS File -->
-<script src="assets/javascript/api.js"></script>
+<script src="../public/assets/javascript/api.js"></script>
 
 <!-- GOOGLE API MAPS SCRIPT LINK -->
 <script async defer
