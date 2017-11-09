@@ -1,6 +1,6 @@
 # A-Dogs-Day
 
-An app using Node.js, MySQL, Sequelize.js, Handlebars, several different APIs, and Materialize frameowork that encourages users to plan a day with their dog. Users can select restaurants, bars or parks to take their dog to. Currently limited to (location) for beta. 
+An app using Node.js, MySQL, Sequelize.js, Handlebars, several different APIs, and Materialize framework that encourages users to plan a day with their dog. Users can select restaurants, bars or parks to take their dog to. Currently limited to (Orlando, FL) for beta. 
 
 Visit [Day With Your Dog](link)
 

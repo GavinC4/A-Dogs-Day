@@ -34,19 +34,6 @@ var OrlandoZipcodes = ["32801", "32802", "32803", "32808", "32809", "32812", "32
 					   "32878", "32887", "32891", "32896"
 					   ];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 for (var k = 0; k < OrlandoZipcodes.length; k++){
 	var zipcode = OrlandoZipcodes[k];
 
