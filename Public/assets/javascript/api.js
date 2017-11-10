@@ -161,15 +161,27 @@ function makeMarkerIcon(markerColor) {
     return markerImage;
 };
 
+// forces to use this function
+makeDogIcon();
+
 // This creates the dog icon for each spot
 function makeDogIcon(imageId) {
+    console.log("gothere!!!!");
     // for (var i = 0; i < locationMarkers.length; i++) {
     var markerDogImage = new google.maps.MarkerImage(
         "assets/img/" + imageId + ".png",
         new google.maps.Size(30, 38),
         new google.maps.Point(0, 0),
         new google.maps.Point(15, 38),
-        new google.maps.Size(30, 38));
+        new google.maps.Size(30, 38),
+        //this is new part we added
+        new google.maps.Marker({
+            map: map,
+            position: { lat: 28.5389212616, lng: -81.3493730127811 },
+            title: "Spot1",
+            animation: google.maps.Animation.DROP,
+            icon: defaultIcon
+        }));
     return markerDogImage;
     locationMarkers[i].setIcon(dogIcon.icon);
     // }
