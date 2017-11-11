@@ -16,5 +16,5 @@ $(document).ready(function(){
 
 
   
-console.log("Hello");
+console.log("THIS IS THE PROJECT");
 
