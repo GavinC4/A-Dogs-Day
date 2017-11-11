@@ -29,12 +29,19 @@ float: left;
 
 }
 
+#logText {
+  font-family: 'Amatic SC' cursive;
+  color:  #2d8bce;
+  font-size:2rem;
+}
+
+input[type=text], input[type=email] {
+  color: #444 !important;
+}      
+
+
 /* index banner */
 
-/* #team { */
-  /* background-image: url("./img/dog-eyes.jpg"); */
-  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNiQoyAy1qX1u4TBnxQq-nol6EEsRvLjeBVJ9odkmb_0KAc2eMMw"); */
-/* } */
 #index-banner {
 
 background-color: #2d8bce;

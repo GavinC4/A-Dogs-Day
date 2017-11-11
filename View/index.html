@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#0d47a1">
     <title>Day With Your Dog</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../public/assets/css/reset.css">
     <!-- FONT AWESOME LINK -->
     <link href="../public/assets/css/font-awesome.min.css" type="text/css" rel="stylesheet">
 
@@ -22,7 +22,12 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+          
 </head>
 
 <!-- ================= START OF HTML ================= -->
@@ -59,11 +64,11 @@
                             <a href="#team">Team</a>
                         </li>
                         <li>
-                            <a data-toggle="tab" href="#signup">Sign Up</a>
+                                <a  id="btnsign"data-toggle="tab" href="#signup">Sign Up</a>
                         </li>
                         <!-- MODAL  -->
                         <li class="active">
-                            <a data-toggle="tab" class="modal-trigger" href="#modal1">Login In</a>
+                                <a id="btnlog" class=" modal-trigger" href="#login">Log In</a>
                         </li>
 
                     </ul>
@@ -78,10 +83,10 @@
                             <a href="#team">Team</a>
                         </li>
                         <li>
-                            <a data-toggle="tab" href="#signup">Sign Up</a>
+                         <a data-toggle="tab" href="#signup">Sign Up</a>
                         </li>
                         <li class="active">
-                            <a data-toggle="tab" href="#modal1">Login In</a>
+                                <a data-toggle="tab" href="#login">Login In</a>
                         </li>
                     </ul>
                     <a href="#" data-activates="nav-mobile" class="button-collapse">
@@ -93,69 +98,64 @@
     </div>
 
 
- <!-- SIGN IN MODAL -->
 
- <div id="modal1" class="modal">
+ <!-- SIGN UP MODAL -->
+ <div id="signup" class="modal">
         <div class="modal-content">
-         
-         
-         
-        <div class="tab-content">
-                <div id="signup" class="tab-pane">
-                    <h1>Sign Up for Free</h1>  <!-- add handlebar object, signup title here -->
-                    <!-- <h1>{{registrationTitle}}</h1>
-                    {{#if errors}}
-                        {{#each errors}}
-                          <div class="alert alert-danger">
-                            {{this.msg}}
-                          </div>
-                        {{/each}}
-                    {{/if}} -->
-                    <form action="/register" method="post">
-                      <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" class="form-control" name="username" id="username" placeholder="Set Your Username" required>
+        <div id="signup" class="tab-pane">
+                <h1 id="logText">Sign Up for Free</h1>  <!-- add handlebar object, signup title here -->
+                <!-- <h1>{{registrationTitle}}</h1>
+                {{#if errors}}
+                    {{#each errors}}
+                      <div class="alert alert-danger">
+                        {{this.msg}}
                       </div>
-                      <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email" required>
-                      </div>
-                      <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" name="password" id="password" placeholder="Set Your Password" required>
-                      </div>
-                      <button type="submit" class="btn button-block">Get Started</button>
-                    </form>
-                </div>
-    
-                <div id="login" class="tab-pane active">
-                    <h1>Welcome Back</h1>
-                    <form action="/login" method="post">
-                        <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" class="form-control" name="username" id="username" placeholder="Enter Your Username" required>
-                      </div>
-                      <div class="form-group">
-                        <label for="password">Passord</label>
-                        <input type="password" class="form-control" name="password" id="password" placeholder="Enter Your Password" required>
-                      </div>
-                      <button type="submit" class="btn button-block">Login In</button>
-                    </form>
-                </div>
+                    {{/each}}
+                {{/if}} -->
+                <form action="/register" method="post">
+                  <div class="form-group">
+                    <label for="username">Use Name</label>
+                    <input type="text" class="form-control" name="username" id="username" placeholder="Set Your Username" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Set Your Password" required>
+                  </div>
+                  <button type="submit" class="btn blue darken-1">Get Started</button>
+                </form>
             </div>
-
-
-
-
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
         </div>
       </div>
 
-
-
-
+         <!-- LOG IN Modal -->
+   <div id="login" class="modal">
+        <div class="modal-content">
+            
+           <div class="tab-content">
+               <div id="login" class="tab-pane active">
+                   <h1 id="logText">Welcome Back</h1>
+                   <form action="/login" method="post">
+                       <div class="form-group">
+                       <label for="username">User Name</label>
+                       <input type="text" class="form-control" name="username" id="username" placeholder="Enter Your Username" required>
+                     </div>
+                     <div class="form-group">
+                       <label for="password">Password</label>
+                       <input type="password" class="form-control" name="password" id="password" placeholder="Enter Your Password" required>
+                     </div>
+                     <button type="submit" class="btn blue darken-1">Login In</button>
+                   </form>
+               </div>
+           </div>
+   
+        </div>
+      </div>
+        
+  
 
 
     <!-- ================= SPLASH PAGE ANIMATION ================= -->
@@ -394,7 +394,7 @@
                 <script src="../public/assets/javascript/modal.js">
                 </script>
                 <!-- Template JS files -->
-                <script src="../public/assets/javascript/plugin-min.js"></script>
+                <!-- <script src="../public/assets/javascript/plugin-min.js"></script> -->
                 <script src="../public/assets/javascript/custom-min.js"></script>
                 <!-- Underscore JS library CDN -->
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
@@ -406,7 +406,7 @@
                 </script>
 
                 <!-- Templating Using Underscore Library -->
-                <script type="text/template" id="cardsResults">
+                <!-- <script type="text/template" id="cardsResults">
         <div class="col s12 m4 l4">
             <div class="card" id="<%= card.cardId %>">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -420,7 +420,7 @@
                     <p class="card-info"><%= card.cardPhone %> </p>
                 </div>
                 <div class="card-action">
-                    <a href="<%=card.cardYelpURL%>">Yelp Info</a>
+                    <a href="<%=card.cardYelpURL%>">Yelp Info</a> -->
                     <!-- <a href="#">More info</a> could add a link to do a modal with more info -->
                 </div>
             </div>
