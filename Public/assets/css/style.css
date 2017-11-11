@@ -1,6 +1,100 @@
 /*GALAXY GROUP PROJECT. OWNERS: Saidi, Christine and Nigel*/
+/* nav bar */
+.nav_color {
+  background-color: white;
+  
+}
+a {
+  color: black !important;
+}
+ nav a {
+font-size: 13px !important;
+float: left;
+ }
+ nav img {
+   float: left;
+   padding: 5px;
+ }
 
+.brand-logo {
+  position: absolute;
+  color: black !important;
+  display: inline-block;
+  font-size: 2.7rem !important;
+  font-style: normal;
+  font-weight: 100;
+  font-family: 'Amatic SC', cursive;
+  padding: 0;
+  letter-spacing: 7px;
 
+}
+
+/* index banner */
+
+/* #team { */
+  /* background-image: url("./img/dog-eyes.jpg"); */
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNiQoyAy1qX1u4TBnxQq-nol6EEsRvLjeBVJ9odkmb_0KAc2eMMw"); */
+/* } */
+#index-banner {
+
+background-color: #2d8bce;
+background-image: url("../img/dog-eyes.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: 50% 70%;
+
+}
+#index-banner img{
+  margin-top: 50px
+}
+
+#ac-list{
+  margin-top: 50px;
+  position: relative;
+  margin-top:-6px;
+
+ 
+}
+#ac-list a:hover { 
+  background-color: #89c9f7;
+}
+
+.cd-headline.type .cd-words-wrapper {
+  vertical-align: top;
+  overflow: hidden;
+  font-family: 'Amatic SC', cursive;
+  font-size: 8.1rem
+} 
+
+ #activity{
+  /* float: left; */
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+  color: #ddfe00 !important;
+  margin-right: 35px;
+
+  
+}
+#adventure{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-top: -35px;
+}
+
+/* /// */
+
+/* FOOTER */
+
+#team{
+  background-color: #2d8bce;
+}
+
+.text_f {
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  
+}
 
 
 .btn-large {
@@ -32,6 +126,7 @@ nav .brand-logo {
   font-weight: 300;
 
 }
+
 
 
 

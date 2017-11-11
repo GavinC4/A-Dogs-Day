@@ -13,12 +13,12 @@
 #intro,
 #work,
 #team {
-    padding-top: 4rem
+    padding-top: 2.5rem
 }
 
 #index-banner {
-    min-height: 632px;
-    max-height: 864px;
+    min-height: 500px;
+    max-height: 8px;
     position: relative;
     background-color: #2196F3
 }
@@ -29,7 +29,8 @@
 }
 
 .text_h {
-    padding: 15% 0;
+    /* padding: 15% 0; */
+    padding: 5% 0;
     font-size: 6.0em;
     font-weight: 100;
     color: white
@@ -54,7 +55,8 @@
 .text_h2 {
     font-weight: 100;
     margin-bottom: 4%;
-    line-height: 4.5rem
+    line-height: 4.5rem;
+    font-family: 'Amatic SC', cursive;
 }
 
 .span_h2 {
@@ -63,7 +65,9 @@
 }
 
 .text_b {
-    color: #2196F3
+    color: #2196F3;
+    font-family: 'Amatic SC', cursive;
+    
 }
 
 .in {
@@ -105,7 +109,8 @@ nav ul a {
 
 .cd-headline.type .cd-words-wrapper {
     vertical-align: top;
-    overflow: hidden
+    overflow: hidden;
+    /* font-family: 'Amatic SC', cursive; */
 }
 
 .cd-headline.type .cd-words-wrapper::after {
@@ -121,17 +126,19 @@ nav ul a {
     transform: translateY(-50%);
     height: 90%;
     width: 1px;
-    background-color: #aebcb9
+    background-color: #aebcb9;
+  
 }
 
 .cd-headline.type .cd-words-wrapper.waiting::after {
     -webkit-animation: cd-pulse 1s infinite;
     -moz-animation: cd-pulse 1s infinite;
-    animation: cd-pulse 1s infinite
+    animation: cd-pulse 1s infinite;
+    
 }
 
 .cd-headline.type .cd-words-wrapper.selected {
-    background-color: #FFF
+    background-color: #FFF;
 }
 
 .cd-headline.type .cd-words-wrapper.selected::after {
