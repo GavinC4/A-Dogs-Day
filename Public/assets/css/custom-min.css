@@ -20,7 +20,7 @@
     min-height: 632px;
     max-height: 864px;
     position: relative;
-    background-color: #2196F3
+    background-color: #2196F3;
 }
 
 #nav_f {
@@ -37,7 +37,7 @@
 
 .brand-logo {
     position: absolute;
-    color: #fff;
+    color: rgb(180, 23, 23);
     display: inline-block;
     font-size: 2.1rem;
     font-style: normal;
