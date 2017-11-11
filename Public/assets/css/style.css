@@ -1,5 +1,9 @@
 /*GALAXY GROUP PROJECT. OWNERS: Saidi, Christine and Nigel*/
 /* nav bar */
+
+*{
+  box-sizing: border-box;
+}
 .nav_color {
   background-color: white;
   
@@ -87,8 +91,17 @@ background-position: 50% 70%;
   font-size: 15px;
   letter-spacing: 2px;
   margin-top: -35px;
+  padding-bottom: 30px;
 }
 
+#allActivities{
+ background-color: #2d8bce;
+}
+
+#displayActivity{
+  background-color: white;
+  /* position: absolute; */
+}
 /* /// */
 
 /* FOOTER */
@@ -103,6 +116,19 @@ background-position: 50% 70%;
   
 }
 
+#cardActivity {
+
+  right: -189px;
+  width: 1014px; 
+  height: 100%;
+  /* width: 100%; */
+
+}
+
+
+.container .row {
+  margin: 0 auto;
+}
 
 .btn-large {
 
