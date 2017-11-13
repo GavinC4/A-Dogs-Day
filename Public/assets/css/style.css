@@ -116,14 +116,14 @@ background-position: 50% 70%;
   
 }
 
-#cardActivity {
+/* #cardActivity {
 
   right: -189px;
   width: 1014px; 
   height: 100%;
-  /* width: 100%; */
+ 
 
-}
+} */
 
 
 .container .row {
@@ -199,3 +199,33 @@ input[type=text], input[type=email] {
 h1{
     color: white;
 }
+
+/* @media screen and (max-width: 992px){
+  
+   span{
+     font-size: 30px !important;
+   }
+ 
+   .cd-headline.type .cd-words-wrapper{
+     font-size: 4.1rem
+   } 
+ } */
+
+
+@media screen and (max-width: 640px){
+  
+#activity{
+  font-size: 60px !important;
+}
+span{
+  font-size: 30px;
+
+}
+.span_h2 {
+  font-size: 48px;
+}
+.cd-headline.type .cd-words-wrapper{
+  font-size: 4.1rem
+}
+}
+
