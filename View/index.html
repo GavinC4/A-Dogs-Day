@@ -22,19 +22,19 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
-<!-- Compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-          
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
 </head>
 
 <!-- ================= START OF HTML ================= -->
 
 <body id="top" class="scrollspy">
-     
-            
+
+
 
     <!-- Pre Loader -->
     <div id="loader-wrapper">
@@ -50,7 +50,7 @@
         <nav id="nav_f" class="nav_color " role="navigation">
             <div class="container">
                 <div class="nav-wrapper  z-depth-1">
-                    <img src="../public/assets/img/dog-symbol.png"  class="hide-on-med-and-down">
+                    <img src="../public/assets/img/dog-symbol.png" class="hide-on-med-and-down" class="section scrollspy">
                     <a href="#" id="logo-container" class="brand-logo">Day With Your Dog</a>
 
                     <ul class="right hide-on-med-and-down">
@@ -64,11 +64,11 @@
                             <a href="#team">Team</a>
                         </li>
                         <li>
-                                <a  id="btnsign"data-toggle="tab" href="#signup">Sign Up</a>
+                            <a id="btnsign" data-toggle="tab" href="#signup">Sign Up</a>
                         </li>
                         <!-- MODAL  -->
                         <li class="active">
-                                <a id="btnlog" href="#login">Log In</a>
+                            <a id="btnlog" href="#login">Log In</a>
                         </li>
 
                     </ul>
@@ -83,10 +83,10 @@
                             <a href="#team">Team</a>
                         </li>
                         <li>
-                         <a data-toggle="tab" href="#signup">Sign Up</a>
+                            <a data-toggle="tab" href="#signup">Sign Up</a>
                         </li>
                         <li class="active">
-                                <a data-toggle="tab" href="#login">Login In</a>
+                            <a data-toggle="tab" href="#login">Login In</a>
                         </li>
                     </ul>
                     <a href="#" data-activates="nav-mobile" class="button-collapse">
@@ -99,11 +99,12 @@
 
 
 
- <!-- SIGN UP MODAL -->
- <div id="signup" class="modal">
+    <!-- SIGN UP MODAL -->
+    <div id="signup" class="modal">
         <div class="modal-content">
-        <div id="signup" class="tab-pane">
-                <h1 id="logText">Sign Up for Free</h1>  <!-- add handlebar object, signup title here -->
+            <div id="signup" class="tab-pane">
+                <h1 id="logText">Sign Up for Free</h1>
+                <!-- add handlebar object, signup title here -->
                 <!-- <h1>{{registrationTitle}}</h1>
                 {{#if errors}}
                     {{#each errors}}
@@ -113,49 +114,49 @@
                     {{/each}}
                 {{/if}} -->
                 <form action="/register" method="post">
-                  <div class="form-group">
-                    <label for="username">Use Name</label>
-                    <input type="text" class="form-control" name="username" id="username" placeholder="Set Your Username" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" name="password" id="password" placeholder="Set Your Password" required>
-                  </div>
-                  <button type="submit" class="btn blue darken-1">Get Started</button>
+                    <div class="form-group">
+                        <label for="username">Use Name</label>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Set Your Username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Set Your Password" required>
+                    </div>
+                    <button type="submit" class="btn blue darken-1">Get Started</button>
                 </form>
             </div>
         </div>
-      </div>
+    </div>
 
-         <!-- LOG IN Modal -->
-   <div id="login" class="modal">
+    <!-- LOG IN Modal -->
+    <div id="login" class="modal">
         <div class="modal-content">
-            
-           <div class="tab-content">
-               <div id="login" class="tab-pane active">
-                   <h1 id="logText">Welcome Back</h1>
-                   <form action="/login" method="post">
-                       <div class="form-group">
-                       <label for="username">User Name</label>
-                       <input type="text" class="form-control" name="username" id="username" placeholder="Enter Your Username" required>
-                     </div>
-                     <div class="form-group">
-                       <label for="password">Password</label>
-                       <input type="password" class="form-control" name="password" id="password" placeholder="Enter Your Password" required>
-                     </div>
-                     <button type="submit" class="btn blue darken-1">Login In</button>
-                   </form>
-               </div>
-           </div>
-   
+
+            <div class="tab-content">
+                <div id="login" class="tab-pane active">
+                    <h1 id="logText">Welcome Back</h1>
+                    <form action="/login" method="post">
+                        <div class="form-group">
+                            <label for="username">User Name</label>
+                            <input type="text" class="form-control" name="username" id="username" placeholder="Enter Your Username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Enter Your Password" required>
+                        </div>
+                        <button type="submit" class="btn blue darken-1">Login In</button>
+                    </form>
+                </div>
+            </div>
+
         </div>
-      </div>
-        
-  
+    </div>
+
+
 
 
     <!-- ================= SPLASH PAGE ANIMATION ================= -->
@@ -178,235 +179,264 @@
                             <!-- <b>Socialize</b> -->
                         </span>
                         <span>with your Dog</span>
-                        
+
                     </h1>
-                    
+
                     <p id="adventure" class="center">CHOOSE YOUR ADVENTURE</p>
 
                     <div class="row">
 
-                            <div id="ac-list" class="col s12 center-align">
-                                    <a href="#yourMap" id="activity" data-category="restaurants">EAT.</a>
-                                    <a href="#yourMap" id="activity" data-category="bars">DRINK.</a>
-                                    <a href="#yourMap" id="activity" data-category="parks">PLAY.</a>
-                                    <a href="#yourMap" id="activity" data-category="stores">SHOP.</a>
-                                   
-                                   
-                                </div>
-                </div>
+                        <div id="ac-list" class="col s12 center-align">
+                            <a href="#yourMap" id="activity" data-category="restaurants" class="section scrollspy">EAT.</a>
+                            <a href="#yourMap" id="activity" data-category="bars">DRINK.</a>
+                            <a href="#yourMap" id="activity" data-category="parks">PLAY.</a>
+                            <a href="#yourMap" id="activity" data-category="stores">SHOP.</a>
 
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
+
+
+
+        <!-- ================= PARALLAX ONE ================= -->
+        <!-- This is the image that scrolls behind the text. -->
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="../public/assets/img/bordercollie.jpg">
+            </div>
+        </div>
+
+
         
-
-    
-    <!-- ================= PARALLAX ONE ================= -->
-    <!-- This is the image that scrolls behind the text. -->
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="../public/assets/img/bordercollie.jpg">
-        </div>
-    </div>
-
-    <!-- ================= MAP SECTION ================= -->
-    <!--This will be the MAP SECTION-->
-    <div id="yourMap" class="section scrollspy">
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h2 class="center header text_h2"> FIND YOUR
-                        <span class="span_h2"> SPOT </span>
-                    </h2>
-                </div>
-                <div class="col s12 white darken-2" id="map">GOOGLE MAPS
+        <div id="allActivities">
+            <!-- ================= MAP SECTION ================= -->
+            <!--This will be the MAP SECTION-->
+            <div id="yourMap" class="section scrollspy">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12">
+                            <h2 class="center header text_h2"> FIND YOUR
+                                <span class="span_h2"> SPOT </span>
+                            </h2>
+                        </div>
+                        <div class="col s12 white darken-2" id="map">GOOGLE MAPS
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- ================= CARD DISPLAY - whatever is searched ================= -->
-    <!-- Will need to update this piece dynamically based on AJAX call to firebase database  -->
-    <div class="section scrollspy" id="cards">
-        <div class="container">
-            <h2 class="header text_b">Eat. Drink. Play. Shop.</h2>
-            <!-- Need to dynamically update these pics, should have a placeholder here, like featured bars or parks,etc.  -->
-            <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum lectus justo, at blandit erat semper in. Maecenas et felis blandit, hendrerit nibh sit amet, viverra diam. Cras rhoncus velit et massa auctor tempus. Duis massa justo, rhoncus sed arcu in, molestie maximus ex. Curabitur interdum turpis quam, quis porta tellus bibendum eget. Nullam commodo et purus vitae aliquam. Nulla molestie nisi id nisi pulvinar, ut tristique velit laoreet. Maecenas consequat feugiat hendrerit. Ut dapibus lobortis massa non tempus. Sed ut placerat mauris. Nulla at dui id erat efficitur fringilla. Praesent odio nibh, pellentesque vitae ullamcorper at, scelerisque ac diam. Integer sit amet tortor nunc. Quisque mattis justo quis magna viverra, ultricies porta ligula consectetur. Mauris euismod dui et quam gravida tristique. Integer rhoncus sed velit non euismod.
-            </p>
-            <div class="row" id="cardsAppearHere"></div>
-        </div>
-    </div>
-
-    <!-- ================= PARALLAX TWO ================= -->
-    <!-- This is the image that scrolls behind the text. -->
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="../public/assets/img/doghose.jpg">
-        </div>
-    </div>
-
-    <!-- ================= FOOTER ================= -->
-    <!-- NEED TO CHANGE ALL OF LINKS -->
-    <footer id="team" class="page-footer scrollspy">
-        <div class="container">
-            <h1 class="header text_f">The Team</h1>
+            <div class="container"> 
             <div class="row">
-                <!-- AVATAR ONE - Wenfang -->
-                <div class="col s12 m3">
-                    <div class="card card-avatar">
-                        <div class="waves-effect waves-block waves-light">
-                            <img class="activator" src="../public/assets/img/wenfang-avatar.png">
-                        </div>
+                    <div class="col s12">
+                      <div class="card" id="cardActivity">
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Wenfang
-                                <br/>
-                                <small>
-                                    <em>
-                                        <a class="red-text text-darken-1" href="#">Co-Founder</a>
-                                    </em>
-                                </small>
-                            </span>
-                            <p>
-
-                                <a class="blue-text text-lighten-2" href="#">
-                                    <i class="fa fa-linkedin-square"></i>
-                                </a>
-
-                                <a class="blue-text text-lighten-2" href="#">
-                                    <i class="fa fa-github-square"></i>
-                                </a>
-                                <a class="blue-text text-lighten-2" href="#">
-                                    <i class="fa fa-envelope-square"></i>
-                                </a>
-                                <a class="blue-text text-lighten-2" href="#">
-                                    <i class="fa fa-pencil-square"></i>
-                                </a>
-
-                            </p>
+                                
+                                <!-- Need to dynamically update these pics, should have a placeholder here, like featured bars or parks,etc.  -->
+                                <h2 class="header text_b">Eat. Drink. Play. Shop.</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum lectus justo, at blandit erat semper in. Maecenas
+                                    et felis blandit, hendrerit nibh sit amet, viverra diam. Cras rhoncus velit et massa
+                                    auctor tempus. Duis massa justo, rhoncus sed arcu in, molestie maximus ex. Curabitur
+                                    interdum turpis quam, quis porta tellus bibendum eget. Nullam commodo et purus vitae
+                                    aliquam. Nulla molestie nisi id nisi pulvinar, ut tristique velit laoreet. Maecenas consequat
+                                    feugiat hendrerit. Ut dapibus lobortis massa non tempus. Sed ut placerat mauris. Nulla
+                                    at dui id erat efficitur fringilla. Praesent odio nibh, pellentesque vitae ullamcorper
+                                    at, scelerisque ac diam. Integer sit amet tortor nunc. Quisque mattis justo quis magna
+                                    viverra, ultricies porta ligula consectetur. Mauris euismod dui et quam gravida tristique.
+                                    Integer rhoncus sed velit non euismod.
+                                </p>
+                                <div class="row" id="cardsAppearHere"></div>
                         </div>
+                        
+                      </div>
                     </div>
-                </div>
-                <!-- AVATAR TWO - Milena -->
-                <div class="col s12 m3">
-                    <div class="card card-avatar">
-                        <div class="waves-effect waves-block waves-light">
-                            <img class="activator" src="../public/assets/img/milena-avatar.png">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Milena
-                                <br/>
-                                <small>
-                                    <em>
-                                        <a class="red-text text-darken-1" href="#"> Co-Founder</a>
-                                    </em>
-                                </small>
-                            </span>
-                            <p>
-                                <a class="blue-text text-lighten-2" href="#">
-                                    <i class="fa fa-linkedin-square"></i>
-                                </a>
-
-                                <a class="blue-text text-lighten-2" href="#">
-                                    <i class="fa fa-github-square"></i>
-                                </a>
-                                <a class="blue-text text-lighten-2" href="#">
-                                    <i class="fa fa-envelope-square"></i>
-                                </a>
-                                <a class="blue-text text-lighten-2" href="#">
-                                    <i class="fa fa-pencil-square"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- AVATAR THREE - Geoff -->
-                <div class="col s12 m3">
-                    <div class="card card-avatar">
-                        <div class="waves-effect waves-block waves-light">
-                            <img class="activator" src="../public/assets/img/geoff-avatar.png">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">
-                                Geoff
-                                <br/>
-                                <small>
-                                    <em>
-                                        <a class="red-text text-darken-1" href="#">Co-Founder</a>
-                                    </em>
-                                </small>
-                            </span>
-                            <p>
-                                <a class="blue-text text-lighten-2" href="#">
-                                    <i class="fa fa-linkedin-square"></i>
-                                </a>
-
-                                <a class="blue-text text-lighten-2" href="#">
-                                    <i class="fa fa-github-square"></i>
-                                </a>
-                                <a class="blue-text text-lighten-2" href="#">
-                                    <i class="fa fa-envelope-square"></i>
-                                </a>
-                                <a class="blue-text text-lighten-2" href="#">
-                                    <i class="fa fa-pencil-square"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- AVATAR FOUR - Gavin -->
-                <div class="col s12 m3">
-                    <div class="card card-avatar">
-                        <div class="waves-effect waves-block waves-light">
-                            <img class="activator" src="../public/assets/img/gavin-avatar.png">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">
-                                Gavin
-                                <br/>
-                                <small>
-                                    <em>
-                                        <a class="red-text text-darken-1" href="#">Co-Founder</a>
-                                    </em>
-                                </small>
-                            </span>
-                            <p>
-                                <a class="blue-text text-lighten-2" href="#">
-                                    <i class="fa fa-linkedin-square"></i>
-                                </a>
-
-                                <a class="blue-text text-lighten-2" href="#">
-                                    <i class="fa fa-github-square"></i>
-                                </a>
-                                <a class="blue-text text-lighten-2" href="#">
-                                    <i class="fa fa-envelope-square"></i>
-                                </a>
-                                <a class="blue-text text-lighten-2" href="#">
-                                    <i class="fa fa-pencil-square"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
+                  </div>
                 </div>
 
-                <!-- ================= SCRIPTS================= -->
-                <!-- JS modal -->
-                <script src="../public/assets/javascript/modal.js">
-                </script>
-                <!-- Template JS files -->
-                <!-- <script src="../public/assets/javascript/plugin-min.js"></script> -->
-                <script src="../public/assets/javascript/custom-min.js"></script>
-                <!-- Underscore JS library CDN -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-                <!-- Custom JS File -->
-                <script src="../public/assets/javascript/api.js"></script>
 
-                <!-- GOOGLE API MAPS SCRIPT LINK -->
-                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM9Sy-q5y4LdWziDiHZ03uspNuxXd7lUo&callback=initMap">
-                </script>
+       
 
-                <!-- Templating Using Underscore Library -->
-                <!-- <script type="text/template" id="cardsResults">
+
+            <!-- ================= CARD DISPLAY - whatever is searched ================= -->
+            <!-- Will need to update this piece dynamically based on AJAX call to firebase database  -->
+
+
+        </div>
+
+
+        <!-- ================= PARALLAX TWO ================= -->
+        <!-- This is the image that scrolls behind the text. -->
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="../public/assets/img/doghose.jpg">
+            </div>
+        </div>
+
+        <!-- ================= FOOTER ================= -->
+        <!-- NEED TO CHANGE ALL OF LINKS -->
+        <footer id="team" class="page-footer scrollspy">
+            <div class="container">
+                <h1 class="header text_f">The Team</h1>
+                <div class="row">
+                    <!-- AVATAR ONE - Wenfang -->
+                    <div class="col s12 m3">
+                        <div class="card card-avatar">
+                            <div class="waves-effect waves-block waves-light">
+                                <img class="activator" src="../public/assets/img/wenfang-avatar.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Wenfang
+                                    <br/>
+                                    <small>
+                                        <em>
+                                            <a class="red-text text-darken-1" href="#">Co-Founder</a>
+                                        </em>
+                                    </small>
+                                </span>
+                                <p>
+
+                                    <a class="blue-text text-lighten-2" href="#">
+                                        <i class="fa fa-linkedin-square"></i>
+                                    </a>
+
+                                    <a class="blue-text text-lighten-2" href="#">
+                                        <i class="fa fa-github-square"></i>
+                                    </a>
+                                    <a class="blue-text text-lighten-2" href="#">
+                                        <i class="fa fa-envelope-square"></i>
+                                    </a>
+                                    <a class="blue-text text-lighten-2" href="#">
+                                        <i class="fa fa-pencil-square"></i>
+                                    </a>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AVATAR TWO - Milena -->
+                    <div class="col s12 m3">
+                        <div class="card card-avatar">
+                            <div class="waves-effect waves-block waves-light">
+                                <img class="activator" src="../public/assets/img/milena-avatar.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Milena
+                                    <br/>
+                                    <small>
+                                        <em>
+                                            <a class="red-text text-darken-1" href="#"> Co-Founder</a>
+                                        </em>
+                                    </small>
+                                </span>
+                                <p>
+                                    <a class="blue-text text-lighten-2" href="#">
+                                        <i class="fa fa-linkedin-square"></i>
+                                    </a>
+
+                                    <a class="blue-text text-lighten-2" href="#">
+                                        <i class="fa fa-github-square"></i>
+                                    </a>
+                                    <a class="blue-text text-lighten-2" href="#">
+                                        <i class="fa fa-envelope-square"></i>
+                                    </a>
+                                    <a class="blue-text text-lighten-2" href="#">
+                                        <i class="fa fa-pencil-square"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AVATAR THREE - Geoff -->
+                    <div class="col s12 m3">
+                        <div class="card card-avatar">
+                            <div class="waves-effect waves-block waves-light">
+                                <img class="activator" src="../public/assets/img/geoff-avatar.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">
+                                    Geoff
+                                    <br/>
+                                    <small>
+                                        <em>
+                                            <a class="red-text text-darken-1" href="#">Co-Founder</a>
+                                        </em>
+                                    </small>
+                                </span>
+                                <p>
+                                    <a class="blue-text text-lighten-2" href="#">
+                                        <i class="fa fa-linkedin-square"></i>
+                                    </a>
+
+                                    <a class="blue-text text-lighten-2" href="#">
+                                        <i class="fa fa-github-square"></i>
+                                    </a>
+                                    <a class="blue-text text-lighten-2" href="#">
+                                        <i class="fa fa-envelope-square"></i>
+                                    </a>
+                                    <a class="blue-text text-lighten-2" href="#">
+                                        <i class="fa fa-pencil-square"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AVATAR FOUR - Gavin -->
+                    <div class="col s12 m3">
+                        <div class="card card-avatar">
+                            <div class="waves-effect waves-block waves-light">
+                                <img class="activator" src="../public/assets/img/gavin-avatar.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">
+                                    Gavin
+                                    <br/>
+                                    <small>
+                                        <em>
+                                            <a class="red-text text-darken-1" href="#">Co-Founder</a>
+                                        </em>
+                                    </small>
+                                </span>
+                                <p>
+                                    <a class="blue-text text-lighten-2" href="#">
+                                        <i class="fa fa-linkedin-square"></i>
+                                    </a>
+
+                                    <a class="blue-text text-lighten-2" href="#">
+                                        <i class="fa fa-github-square"></i>
+                                    </a>
+                                    <a class="blue-text text-lighten-2" href="#">
+                                        <i class="fa fa-envelope-square"></i>
+                                    </a>
+                                    <a class="blue-text text-lighten-2" href="#">
+                                        <i class="fa fa-pencil-square"></i>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================= SCRIPTS================= -->
+                    <!-- JS modal -->
+                    <script src="../public/assets/javascript/modal.js">
+                    </script>
+                    <!-- Template JS files -->
+                    <!-- <script src="../public/assets/javascript/plugin-min.js"></script> -->
+                    <script src="../public/assets/javascript/custom-min.js"></script>
+                    <!-- Underscore JS library CDN -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+                    <!-- Custom JS File -->
+                    <script src="../public/assets/javascript/api.js"></script>
+
+                    <!-- GOOGLE API MAPS SCRIPT LINK -->
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM9Sy-q5y4LdWziDiHZ03uspNuxXd7lUo&callback=initMap">
+                    </script>
+
+                    <!-- Templating Using Underscore Library -->
+                    <!-- <script type="text/template" id="cardsResults">
         <div class="col s12 m4 l4">
             <div class="card" id="<%= card.cardId %>">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -424,9 +454,9 @@
                     <!-- <a href="#">More info</a> could add a link to do a modal with more info -->
                 </div>
             </div>
-        </div>
+    </div>
     </script>
-   
+
 </body>
 
 </html>
