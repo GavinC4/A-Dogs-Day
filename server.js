@@ -31,9 +31,9 @@ app.get("/", function(req,res) {
 })
 
 // Open Server
-var port = process.env.PORT || 3000;
-app.listen(port);
-console.log("liseting to port " + port);
+// var port = process.env.PORT || 8080;
+// app.listen(port);
+// console.log("liseting to port " + port);
 
 // var router = require('');
 // app.use('/', router);
@@ -53,8 +53,8 @@ app.get("/api/restaurant", function(req, res) {
 var yelp = require('yelp-fusion');
 
 // Moved token so its not included in repo
-var config = require(__dirname + "/config.json");
-var client = yelp.client(config.token);
+// var config = require(__dirname + "/config.json");
+// var client = yelp.client(config.token);
 
 // RESTAURANT - DOG FRIENDLY =======================================
 function restaurant() {
