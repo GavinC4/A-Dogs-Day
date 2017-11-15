@@ -21,8 +21,8 @@ app.set('view engine', 'handlebars');
 //DATA
 var listAct = [
 		{ plan1: "EAT." },
-		{ plan2: "PLAY." },
-		{ plan3: "DRINK." },
+		{ plan2: "DRINK." },
+		{ plan3: "PLAY." },
 		{ plan4: "SHOP." }
 ];
 
