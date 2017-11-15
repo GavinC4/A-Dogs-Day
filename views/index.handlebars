@@ -56,6 +56,17 @@
                     <a href="#" data-activates="nav-mobile" class="button-collapse">
                         <i class="mdi-navigation-menu"></i>
                     </a>
+                    <!-- Element Showed -->
+                    <div class="fixed-action-btn" style="bottom:45px !important; right:24px !importantS;">
+                        <a id="menu" onclick="$('.tap-target').tapTarget('open');" class="waves-effect waves-light btn btn-floating red" ><i class="material-icons">ER</i></a>
+                    </div>
+                    <!-- Tap Target Structure -->
+                    <div class="tap-target red" data-activates="menu">
+                        <div class="tap-target-content">
+                            <h5>Title</h5>
+                            <p>A bunch of text</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -119,9 +130,6 @@
 
         </div>
     </div>
-
-
-
 
     <!-- ================= SPLASH PAGE ANIMATION ================= -->
     <!-- ADD A SEARCH BAR FEATURE HERE UNDER THE ANIMATION -->
@@ -391,6 +399,7 @@
                     <!-- Template JS files -->
                     <!-- <script src="../public/assets/javascript/plugin-min.js"></script> -->
                     <script src="/assets/javascript/custom-min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
                     <!-- Underscore JS library CDN -->
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
                     <!-- Custom JS File -->

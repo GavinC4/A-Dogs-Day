@@ -1,120 +1,128 @@
-/*GALAXY GROUP PROJECT. OWNERS: Saidi, Christine and Nigel*/
 /* nav bar */
 
-*{
-  box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
+
 .nav_color {
-  background-color: white;
-  
+    background-color: white;
 }
+
 a {
-  color: black !important;
+    color: black !important;
 }
- nav a {
-font-size: 13px !important;
-float: left;
- }
- nav img {
-   float: left;
-   padding: 5px;
- }
+
+nav a {
+    font-size: 13px !important;
+    float: left;
+}
+
+nav img {
+    float: left;
+    padding: 5px;
+}
+
+
+/* .menu {
+    float: right;
+    position: relative;
+} */
 
 .brand-logo {
-  position: absolute;
-  color: black !important;
-  display: inline-block;
-  font-size: 2.7rem !important;
-  font-style: normal;
-  font-weight: 100;
-  font-family: 'Amatic SC', cursive;
-  padding: 0;
-  letter-spacing: 7px;
-
+    position: absolute;
+    color: black !important;
+    display: inline-block;
+    font-size: 2.7rem !important;
+    font-style: normal;
+    font-weight: 100;
+    font-family: 'Amatic SC', cursive;
+    padding: 0;
+    letter-spacing: 7px;
 }
 
 #logText {
-  font-family: 'Amatic SC' cursive;
-  color:  #2d8bce;
-  font-size:2rem;
+    font-family: 'Amatic SC' cursive;
+    color: #2d8bce;
+    font-size: 2rem;
 }
 
-input[type=text], input[type=email] {
-  color: #444 !important;
-}      
+input[type=text],
+input[type=email] {
+    color: #444 !important;
+}
 
 
 /* index banner */
 
 #index-banner {
-
-background-color: #2d8bce;
-background-image: url("../img/dog-eyes.png");
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: 50% 70%;
-
-}
-#index-banner img{
-  margin-top: 10px
+    background-color: #2d8bce;
+    background-image: url("../img/dog-eyes.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 70%;
 }
 
-#ac-list{
-  margin-top: 50px;
-  position: relative;
-  margin-top:-6px;
-
- 
+#index-banner img {
+    margin-top: 10px
 }
-#ac-list a:hover { 
-  background-color: #89c9f7;
+
+#ac-list {
+    margin-top: 50px;
+    position: relative;
+    margin-top: -6px;
+}
+
+#ac-list a:hover {
+    background-color: #89c9f7;
 }
 
 .cd-headline.type .cd-words-wrapper {
-  vertical-align: top;
-  overflow: hidden;
-  font-family: 'Amatic SC', cursive;
-  font-size: 8.1rem
-} 
-
- .activity{
-  /* float: left; */
-  font-family: 'Amatic SC', cursive;
-  font-size: 70px;
-  color: #ddfe00 !important;
-  margin-right: 16px;
-
-  
-}
-#adventure{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 15px;
-  letter-spacing: 2px;
-  margin-top: -35px;
-  padding-bottom: 30px;
+    vertical-align: top;
+    overflow: hidden;
+    font-family: 'Amatic SC', cursive;
+    font-size: 8.1rem
 }
 
-#allActivities{
- background-color: #2d8bce;
+.activity {
+    /* float: left; */
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+    color: #ddfe00 !important;
+    margin-right: 16px;
 }
 
-#displayActivity{
-  background-color: white;
-  /* position: absolute; */
+#adventure {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-top: -35px;
+    padding-bottom: 30px;
 }
+
+#allActivities {
+    background-color: #2d8bce;
+}
+
+#displayActivity {
+    background-color: white;
+    /* position: absolute; */
+}
+
+
 /* /// */
+
 
 /* FOOTER */
 
-#team{
-  background-color: #2d8bce;
+#team {
+    background-color: #2d8bce;
 }
 
 .text_f {
-  color: white;
-  font-family: 'Amatic SC', cursive;
-  
+    color: white;
+    font-family: 'Amatic SC', cursive;
 }
+
 
 /* #cardActivity {
 
@@ -125,80 +133,92 @@ background-position: 50% 70%;
 
 } */
 
-
 .container .row {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .btn-large {
-
-	width: 100%;
-	height: 64px;
-  font-size: 1.25em;
+    width: 100%;
+    height: 64px;
+    font-size: 1.25em;
 }
 
 #map {
-
-	width: 100%;
-  height: 400px;
-        
+    width: 100%;
+    height: 400px;
 }
 
 img.cardImage {
-	height: 200px;
-	width: 300px;
-
+    height: 200px;
+    width: 300px;
 }
 
 .itemInfo {
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 nav .brand-logo {
-  letter-spacing: 0.0525em;
-  font-weight: 300;
-
+    letter-spacing: 0.0525em;
+    font-weight: 300;
 }
 
-
-
-
-
-input[type=text], input[type=email] { 
-  color: white;
-}
-
-/*COLORS FOR THE LOCATION TYPE BAR*/
-  /* label color */
-   .input-field label {
-     color: white;
-   }
-   /* label focus color */
-   .input-field input[type=text]:focus + label {
-     color: white;
-   }
-   /* label underline focus color */
-   .input-field input[type=text]:focus {
-     border-bottom: 1px solid white;
-     box-shadow: 0 1px 0 0 #000;
-   }
-   /* valid color */
-   .input-field input[type=text].valid {
-     border-bottom: 1px solid #000;
-     box-shadow: 0 1px 0 0 #000;
-   }
-   /* invalid color */
-   .input-field input[type=text].invalid {
-     border-bottom: 1px solid #000;
-     box-shadow: 0 1px 0 0 #000;
-   }
-   /* icon prefix focus color */
-   .input-field .prefix.active {
-     color: white;
-   }
-h1{
+input[type=text],
+input[type=email] {
     color: white;
 }
+
+
+/*COLORS FOR THE LOCATION TYPE BAR*/
+
+
+/* label color */
+
+.input-field label {
+    color: white;
+}
+
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label {
+    color: white;
+}
+
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+
+/* valid color */
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+
+/* invalid color */
+
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
 
 /* @media screen and (max-width: 992px){
   
@@ -211,22 +231,18 @@ h1{
    } 
  } */
 
-
-@media screen and (max-width: 640px){
-  
-#activity{
-  font-size: 60px !important;
-  margin: 3px;
+@media screen and (max-width: 640px) {
+    #activity {
+        font-size: 60px !important;
+        margin: 3px;
+    }
+    span {
+        font-size: 30px;
+    }
+    .span_h2 {
+        font-size: 48px;
+    }
+    .cd-headline.type .cd-words-wrapper {
+        font-size: 4.1rem
+    }
 }
-span{
-  font-size: 30px;
-
-}
-.span_h2 {
-  font-size: 48px;
-}
-.cd-headline.type .cd-words-wrapper{
-  font-size: 4.1rem
-}
-}
-

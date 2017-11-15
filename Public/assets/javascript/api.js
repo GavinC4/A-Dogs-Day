@@ -581,6 +581,11 @@ function shop() {
     });
 }
 
+// $(document).onClick(function(){
+//     $('.tap-target').tapTarget('open');
+//     $('.tap-target').tapTarget('close');
+//   });
+
 // Haversine function that calculates the distance between to coordinates with the result in miles
 // function getDistanceInKm(lat2, lng2) {
 //     var userLocation = JSON.parse(localStorage.getItem("userLocation", pos));
