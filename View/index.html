@@ -13,7 +13,7 @@
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <!-- Firebase Reference -->
-    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script> -->
     <!-- CSS  -->
     <link href="../public/assets/css/plugin-min.css" type="text/css" rel="stylesheet">
     <link href="../public/assets/css/custom-min.css" type="text/css" rel="stylesheet">
@@ -22,12 +22,20 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
-    <!-- Compiled and minified CSS -->
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+<!--     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
 
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+          
 </head>
 
 <!-- ================= START OF HTML ================= -->
@@ -64,11 +72,18 @@
                             <a href="#team">Team</a>
                         </li>
                         <li>
+
+                                <a  id="btnsign"data-toggle="tab" href="#signup">Sign Up</a>
+                        </li>
+                        <!-- MODAL  -->
+                        <li class="active">
+
                             <a id="btnsign" data-toggle="tab" href="#signup">Sign Up</a>
                         </li>
                         <!-- MODAL  -->
                         <li class="active">
                             <a id="btnlog" href="#login">Log In</a>
+
                         </li>
 
                     </ul>
@@ -83,10 +98,14 @@
                             <a href="#team">Team</a>
                         </li>
                         <li>
-                            <a data-toggle="tab" href="#signup">Sign Up</a>
+                         <a data-toggle="tab" href="#signup">Sign Up</a>
                         </li>
                         <li class="active">
+
+                                <a data-toggle="tab" href="#login">Login In</a>
+
                             <a data-toggle="tab" href="#login">Login In</a>
+
                         </li>
                     </ul>
                     <a href="#" data-activates="nav-mobile" class="button-collapse">
@@ -99,12 +118,20 @@
 
 
 
+
+ <!-- SIGN UP MODAL -->
+ <div id="signup" class="modal">
+        <div class="modal-content">
+        <div id="signup" class="tab-pane">
+                <h1 id="logText">Sign Up for Free</h1>  <!-- add handlebar object, signup title here -->
+
     <!-- SIGN UP MODAL -->
     <div id="signup" class="modal">
         <div class="modal-content">
             <div id="signup" class="tab-pane">
                 <h1 id="logText">Sign Up for Free</h1>
                 <!-- add handlebar object, signup title here -->
+
                 <!-- <h1>{{registrationTitle}}</h1>
                 {{#if errors}}
                     {{#each errors}}
@@ -114,6 +141,51 @@
                     {{/each}}
                 {{/if}} -->
                 <form action="/register" method="post">
+
+                  <div class="form-group">
+                    <label for="username">Use Name</label>
+                    <input type="text" class="form-control" name="username" id="username" placeholder="Set Your Username" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Set Your Password" required>
+                  </div>
+                  <button type="submit" class="btn blue darken-1">Get Started</button>
+                </form>
+            </div>
+        </div>
+      </div>
+
+         <!-- LOG IN Modal -->
+   <div id="login" class="modal">
+        <div class="modal-content">
+            
+           <div class="tab-content">
+               <div id="login" class="tab-pane active">
+                   <h1 id="logText">Welcome Back</h1>
+                   <form action="/login" method="post">
+                       <div class="form-group">
+                       <label for="username">User Name</label>
+                       <input type="text" class="form-control" name="username" id="username" placeholder="Enter Your Username" required>
+                     </div>
+                     <div class="form-group">
+                       <label for="password">Password</label>
+                       <input type="password" class="form-control" name="password" id="password" placeholder="Enter Your Password" required>
+                     </div>
+                     <button type="submit" class="btn blue darken-1">Login In</button>
+                   </form>
+               </div>
+           </div>
+   
+        </div>
+      </div>
+        
+  
+
                     <div class="form-group">
                         <label for="username">Use Name</label>
                         <input type="text" class="form-control" name="username" id="username" placeholder="Set Your Username" required>
@@ -157,8 +229,6 @@
     </div>
 
 
-
-
     <!-- ================= SPLASH PAGE ANIMATION ================= -->
     <!-- ADD A SEARCH BAR FEATURE HERE UNDER THE ANIMATION -->
     <!-- COULD ALSO ADD A SLIDER to DISPLAY DIFFERENT DOG IMAGES -->
@@ -187,18 +257,32 @@
                     <div class="row">
 
                         <div id="ac-list" class="col s12 center-align">
-                            <a href="#yourMap" id="activity" data-category="restaurants" class="section scrollspy">EAT.</a>
-                            <a href="#yourMap" id="activity" data-category="bars">DRINK.</a>
-                            <a href="#yourMap" id="activity" data-category="parks">PLAY.</a>
-                            <a href="#yourMap" id="activity" data-category="stores">SHOP.</a>
 
-
-                        </div>
+                                <a href="#yourMap" class="activity" id="restaurants" onclick="analyzeClick(this.id)">EAT.</a>
+                                <a href="#yourMap" class="activity" id="bars" onclick="analyzeClick(this.id)">DRINK.</a>
+                                <a href="#yourMap" class="activity" id="parks" onclick="analyzeClick(this.id)">PLAY.</a>
+                                <a href="#yourMap" class="activity" id="stores" onclick="analyzeClick(this.id)">SHOP.</a>
+                       </div>
                     </div>
-
                 </div>
             </div>
         </div>
+        
+
+
+
+    <!-- ================= CARD DISPLAY - whatever is searched ================= -->
+    <!-- Will need to update this piece dynamically based on AJAX call to firebase database  -->
+    <div class="section scrollspy" id="cards">
+        <div class="container">
+            <h2 class="header text_b">Eat. Drink. Play. Shop.</h2>
+            <!-- Need to dynamically update these pics, should have a placeholder here, like featured bars or parks,etc.  -->
+            <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            </p>
+            <div class="row" id="cardsAppearHere"></div>
+        </div>
+    </div>
 
 
 
@@ -419,25 +503,26 @@
                         </div>
                     </div>
 
-                    <!-- ================= SCRIPTS================= -->
-                    <!-- JS modal -->
-                    <script src="../public/assets/javascript/modal.js">
-                    </script>
-                    <!-- Template JS files -->
-                    <!-- <script src="../public/assets/javascript/plugin-min.js"></script> -->
-                    <script src="../public/assets/javascript/custom-min.js"></script>
-                    <!-- Underscore JS library CDN -->
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-                    <!-- Custom JS File -->
-                    <script src="../public/assets/javascript/api.js"></script>
+                <!-- ================= SCRIPTS================= -->
+                <!-- JS modal -->
+                <script src="/assets/javascript/modal.js"></script>
+                <script src="/assets/javascript/api.js"></script>
+                <!-- Template JS files -->
+                <!-- <script src="../public/assets/javascript/plugin-min.js"></script> -->
+                <script src="/assets/javascript/custom-min.js"></script>
+                <!-- Underscore JS library CDN -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+                <!-- Custom JS File -->
+                <script src="/assets/javascript/api.js"></script>
 
-                    <!-- GOOGLE API MAPS SCRIPT LINK -->
-                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM9Sy-q5y4LdWziDiHZ03uspNuxXd7lUo&callback=initMap">
-                    </script>
+                <!-- GOOGLE API MAPS SCRIPT LINK -->
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM9Sy-q5y4LdWziDiHZ03uspNuxXd7lUo&callback=initMap">
+                </script>
 
-                    <!-- Templating Using Underscore Library -->
-                    <!-- <script type="text/template" id="cardsResults">
-        <div class="col s12 m4 l4">
+                <!-- Templating Using Underscore Library -->
+                <!-- <script type="text/template" id="cardsResults">
+
+<!--         <div class="col s12 m4 l4">
             <div class="card" id="<%= card.cardId %>">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator cardImage" src="<%= cardImgURL %>" alt="search-image">
@@ -454,7 +539,7 @@
                     <!-- <a href="#">More info</a> could add a link to do a modal with more info -->
                 </div>
             </div>
-    </div>
+    </div> -->
     </script>
 
 </body>
