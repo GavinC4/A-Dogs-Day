@@ -1,39 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-    <meta name="theme-color" content="#0d47a1">
-    <title>Day With Your Dog</title>
-    <link rel="stylesheet" type="text/css" href="../public/assets/css/reset.css">
-    <!-- FONT AWESOME LINK -->
-    <link href="../public/assets/css/font-awesome.min.css" type="text/css" rel="stylesheet">
-
-    <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-    <!-- Firebase Reference -->
-    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
-    <!-- CSS  -->
-    <link href="../public/assets/css/plugin-min.css" type="text/css" rel="stylesheet">
-    <link href="../public/assets/css/custom-min.css" type="text/css" rel="stylesheet">
-    <!-- STYLE SHEET -->
-    <link href="../public/assets/css/style.css" type="text/css" rel="stylesheet">
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin="anonymous"></script>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-
-</head>
-
-<!-- ================= START OF HTML ================= -->
-
-<body id="top" class="scrollspy">
-
 
 
     <!-- Pre Loader -->
@@ -50,7 +14,7 @@
         <nav id="nav_f" class="nav_color " role="navigation">
             <div class="container">
                 <div class="nav-wrapper  z-depth-1">
-                    <img src="../public/assets/img/dog-symbol.png" class="hide-on-med-and-down" class="section scrollspy">
+                    <img src="/assets/img/dog-symbol.png" class="hide-on-med-and-down" class="section scrollspy">
                     <a href="#" id="logo-container" class="brand-logo">Day With Your Dog</a>
 
                     <ul class="right hide-on-med-and-down">
@@ -58,7 +22,7 @@
                             <a href="#yourMap">Map</a>
                         </li>
                         <li>
-                            <a href="#cards">Your Day</a>
+                            <a href="#ac-list" >Your Day</a>
                         </li>
                         <li>
                             <a href="#team">Team</a>
@@ -187,11 +151,12 @@
                     <div class="row">
 
                         <div id="ac-list" class="col s12 center-align">
-                            <a href="#yourMap" id="activity" data-category="restaurants" class="section scrollspy">EAT.</a>
-                            <a href="#yourMap" id="activity" data-category="bars">DRINK.</a>
-                            <a href="#yourMap" id="activity" data-category="parks">PLAY.</a>
-                            <a href="#yourMap" id="activity" data-category="stores">SHOP.</a>
-
+                            {{#each index}}
+                            <a href="#yourMap" class="activity section scrollspy" id="restaurants" onclick="analyzeClick(this.id)">{{plan1}}</a>
+                            <a href="#yourMap"  class="activity section scrollspy" id="bars" onclick="analyzeClick(this.id)">{{plan2}}</a>
+                            <a href="#yourMap" class="activity section scrollspy" id="parks" onclick="analyzeClick(this.id)">{{plan3}}</a>
+                            <a href="#yourMap" class="activity section scrollspy" id="stores" onclick="analyzeClick(this.id)">{{plan4}}</a>
+                            {{/each}}
 
                         </div>
                     </div>
@@ -206,7 +171,7 @@
         <!-- This is the image that scrolls behind the text. -->
         <div class="parallax-container">
             <div class="parallax">
-                <img src="../public/assets/img/bordercollie.jpg">
+                <img src="/assets/img/bordercollie.jpg">
             </div>
         </div>
 
@@ -272,7 +237,7 @@
         <!-- This is the image that scrolls behind the text. -->
         <div class="parallax-container">
             <div class="parallax">
-                <img src="../public/assets/img/doghose.jpg">
+                <img src="/assets/img/doghose.jpg">
             </div>
         </div>
 
@@ -286,7 +251,7 @@
                     <div class="col s12 m3">
                         <div class="card card-avatar">
                             <div class="waves-effect waves-block waves-light">
-                                <img class="activator" src="../public/assets/img/wenfang-avatar.png">
+                                <img class="activator" src="/assets/img/wenfang-avatar.png">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator grey-text text-darken-4">Wenfang
@@ -321,7 +286,7 @@
                     <div class="col s12 m3">
                         <div class="card card-avatar">
                             <div class="waves-effect waves-block waves-light">
-                                <img class="activator" src="../public/assets/img/milena-avatar.png">
+                                <img class="activator" src="/assets/img/milena-avatar.png">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator grey-text text-darken-4">Milena
@@ -354,7 +319,7 @@
                     <div class="col s12 m3">
                         <div class="card card-avatar">
                             <div class="waves-effect waves-block waves-light">
-                                <img class="activator" src="../public/assets/img/geoff-avatar.png">
+                                <img class="activator" src="/assets/img/geoff-avatar.png">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator grey-text text-darken-4">
@@ -388,7 +353,7 @@
                     <div class="col s12 m3">
                         <div class="card card-avatar">
                             <div class="waves-effect waves-block waves-light">
-                                <img class="activator" src="../public/assets/img/gavin-avatar.png">
+                                <img class="activator" src="/assets/img/gavin-avatar.png">
                             </div>
                             <div class="card-content">
                                 <span class="card-title activator grey-text text-darken-4">
@@ -421,15 +386,15 @@
 
                     <!-- ================= SCRIPTS================= -->
                     <!-- JS modal -->
-                    <script src="../public/assets/javascript/modal.js">
+                    <script src="/assets/javascript/modal.js">
                     </script>
                     <!-- Template JS files -->
                     <!-- <script src="../public/assets/javascript/plugin-min.js"></script> -->
-                    <script src="../public/assets/javascript/custom-min.js"></script>
+                    <script src="/assets/javascript/custom-min.js"></script>
                     <!-- Underscore JS library CDN -->
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
                     <!-- Custom JS File -->
-                    <script src="../public/assets/javascript/api.js"></script>
+                    <script src="/assets/javascript/api.js"></script>
 
                     <!-- GOOGLE API MAPS SCRIPT LINK -->
                     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM9Sy-q5y4LdWziDiHZ03uspNuxXd7lUo&callback=initMap">
@@ -456,7 +421,3 @@
             </div>
     </div>
     </script>
-
-</body>
-
-</html>
