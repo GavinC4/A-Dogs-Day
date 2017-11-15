@@ -80,9 +80,9 @@ background-position: 50% 70%;
  .activity{
   /* float: left; */
   font-family: 'Amatic SC', cursive;
-  font-size: 60px;
+  font-size: 70px;
   color: #ddfe00 !important;
-  margin-right: 35px;
+  margin-right: 16px;
 
   
 }
@@ -216,6 +216,7 @@ h1{
   
 #activity{
   font-size: 60px !important;
+  margin: 3px;
 }
 span{
   font-size: 30px;
