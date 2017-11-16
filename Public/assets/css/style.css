@@ -246,3 +246,7 @@ h1 {
         font-size: 4.1rem
     }
 }
+
+a.underline:hover {
+  text-decoration: underline; 
+}
