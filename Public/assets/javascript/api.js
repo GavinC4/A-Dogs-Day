@@ -77,7 +77,7 @@ function initMap() {
 
             // event listener that displays a popup window when mousing over and changes the color
             myMarker.addListener('mouseover', function() {
-                populateInfoWindow(this, infoWindow);
+                // populateInfoWindow(this, infoWindow);
                 this.setIcon(highlightedIcon);
             });
 
@@ -128,18 +128,22 @@ function analyzeClick(myClick){
     switch(myClick){
         case "restaurants":
             console.log("got to restaurant ==========================");
+            initMap();
             restaurant(); 
             break;
         case "bars":
             console.log("got to bar ==========================");
+            initMap();
             bar();
             break;
         case "parks":
             console.log("got to park ==========================");
+            initMap();
             park(); 
             break;
         case "stores":
             console.log("got to shop ==========================");
+            initMap();
             shop(); 
             break;
         default:
@@ -246,6 +250,8 @@ function restaurant() {
         this.setZoom(12);
         google.maps.event.removeListener(boundsListener);
     });
+
+    
 }
 
 // ================================================================ BARS =======================================================
